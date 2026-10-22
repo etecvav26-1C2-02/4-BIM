@@ -23,6 +23,8 @@ class Biblioteca:
     # ------------------------------------------------------------------
     # Livros
     # ------------------------------------------------------------------
+
+
     def cadastrar_livro(
         self,
         titulo: str,
@@ -33,9 +35,19 @@ class Biblioteca:
         isbn: str | None = None,
     ) -> Livro:
         """Cria, valida e adiciona um livro com ID automático."""
-        # TODO: gerar ID com _proximo_id_livro(), criar Livro, validar e guardar.
+        livro = Livro(
+            id=self._proximo_id_livro(),
+            titulo=titulo.strip(),
+            autor=autor.strip(),
+            genero=genero.strip(),
+            ano=ano,
+            paginas=paginas,
+            isbn=isbn.strip() if isbn else None,
+        )
+        livro.validar()  # levanta ValueError se algo estiver inválido
+        self.livros.append(livro)
         
-        pass
+        return livro
 
     def atualizar_livro(self, id: int, **campos: object) -> Livro:
         """Altera campos de um livro existente e valida o resultado."""
@@ -113,11 +125,12 @@ class Biblioteca:
     # Helpers internos
     # ------------------------------------------------------------------
     def _proximo_id_livro(self) -> int:
-        """Gera um ID de livro que nunca tenha sido usado."""
-        # TODO: usar o maior ID + 1 sem reutilizar IDs removidos.
-        pass
+        if not self.livros:
+            return 1
+        return max(livro.id for livro in self.livros) + 1
 
     def _proximo_id_emprestimo(self) -> int:
         """Gera um ID de empréstimo que nunca tenha sido usado."""
-        # TODO: usar o maior ID + 1 sem reutilizar IDs removidos.
-        pass
+        if not self.emprestimos:
+            return 1
+        return max(emp.id for emp in self.emprestimos) + 1

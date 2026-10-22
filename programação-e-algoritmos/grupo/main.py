@@ -20,6 +20,12 @@ def exibir_menu() -> None:
 def cadastrar(biblioteca: Biblioteca, repositorio: RepositorioJSON) -> None:
     """Opção 1: lê os dados e cadastra um livro."""
     # TODO: pedir título, autor, gênero, ano, páginas e ISBN.
+    titulo = str(input("Diga o titulo do livro: "))
+    autor = str(input("Digite o autor do livro:"))
+    genero = str(input("Digite o genero do livro: "))
+    ano = int(input("Digite o ano do livro: "))
+    paginas = int(input("Digite quantas paginas o livro tem: "))
+    isbn = str(input("Isbn do livro: "))
     # TODO: chamar biblioteca.cadastrar_livro() e salvar.
     pass
 

@@ -30,13 +30,22 @@ class Livro:
         pass
 
     def validar(self) -> None:
-        """Valida os campos do livro.
+            """Levanta ValueError se algum campo for inválido."""
+            if not self.titulo or not self.titulo.strip():
+                raise ValueError("O título não pode ser vazio.")
+            if not self.autor or not self.autor.strip():
+                raise ValueError("O autor não pode ser vazio.")
+            if not self.genero or not self.genero.strip():
+                raise ValueError("O gênero não pode ser vazio.")
 
-        Levanta ValueError se título/autor/gênero estiverem vazios,
-        se o ano estiver fora de 1450..ano atual ou se páginas <= 0.
-        """
-        # TODO: aplicar .strip() nos textos antes de validar.
-        pass
+            ano_atual = date.today().year
+            if not self.ANO_MINIMO <= self.ano <= ano_atual:
+                raise ValueError(
+                    f"O ano deve estar entre {self.ANO_MINIMO} e {ano_atual}."
+                )
+
+            if self.paginas <= 0:
+                raise ValueError("O número de páginas deve ser maior que zero.")
 
     def __str__(self) -> str:
         """Retorna uma linha legível, ex.: "[3] Dom Casmurro - ..."."""
