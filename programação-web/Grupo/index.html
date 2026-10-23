@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ressonância — Cultura que ressoa</title>
+  <meta name="description" content="Hub editorial sobre música, arte visual, cinema, literatura, moda e cultura urbana. Curadoria atenta, textos que aprofundam sem afastar.">
+  <meta name="theme-color" content="#F4EFE6">
+  <meta property="og:title" content="Ressonância — Cultura que ressoa">
+  <meta property="og:description" content="Música, arte, cinema, literatura e as cenas que inventam a cidade.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+  <script>
+    // Evita piscar o tema claro em quem prefere o escuro.
+    document.documentElement.dataset.theme =
+      localStorage.getItem("ressonancia-tema") ||
+      (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  </script>
+</head>
+<body id="topo">
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-head">
+    <div class="wrap head-inner">
+      <a class="brand" href="index.html" aria-label="Ressonância — página inicial">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+          <circle class="dot" cx="11" cy="16" r="2"></circle>
+          <g stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+            <path d="M11 11.5a4.5 4.5 0 0 1 0 9"></path>
+            <path d="M11 8a8 8 0 0 1 0 16"></path>
+            <path d="M11 4.5a11.5 11.5 0 0 1 0 23"></path>
+          </g>
+        </svg>
+        <span class="brand-word">ressonância</span>
+      </a>
+
+      <nav class="site-nav" id="nav" aria-label="Principal">
+        <ul>
+          <li><a href="#ultimas">Últimas</a></li>
+          <li><a href="#linguagens">Linguagens</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="materia.html">Ensaio</a></li>
+        </ul>
+      </nav>
+
+      <div class="head-tools">
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Ativar modo escuro">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+        </button>
+        <a class="btn btn--sm" href="#newsletter">Assine</a>
+        <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <svg class="hero-arcs" viewBox="0 0 600 600" fill="none" aria-hidden="true" focusable="false">
+        <g stroke-linecap="round">
+          <path d="M60 180a120 120 0 0 1 0 240" stroke="#C2452D" stroke-width="1.5" opacity=".5"></path>
+          <path d="M60 110a190 190 0 0 1 0 380" stroke="#5C6B4A" stroke-width="1.3" opacity=".45"></path>
+          <path d="M60 40a260 260 0 0 1 0 520" stroke="#E0A526" stroke-width="1.1" opacity=".4"></path>
+        </g>
+      </svg>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Cultura que ressoa</p>
+          <h1 id="hero-title">Onde a arte encontra o som.</h1>
+          <p class="lede">Crítica, entrevista e ensaio sobre música, arte visual, cinema, literatura e as cenas que inventam a cidade — sem exigir repertório prévio.</p>
+
+          <form class="search" id="busca-form" role="search">
+            <label class="sr-only" for="busca">Buscar matérias</label>
+            <input type="search" id="busca" name="busca" placeholder="Artista, disco ou exposição" autocomplete="off">
+            <button type="submit" aria-label="Buscar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="m16.5 16.5 4 4"></path>
+              </svg>
+            </button>
+          </form>
+
+          <p class="hero-hint">Tente por
+            <button type="button" data-query="cinema">cinema</button>,
+            <button type="button" data-query="exposição">exposição</button> ou
+            <button type="button" data-query="poesia">poesia</button>.
+          </p>
+        </div>
+
+        <figure class="hero-feature">
+          <div class="shot">
+            <span class="badge">Em destaque</span>
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+                 alt="Cantor de braço erguido sob a luz do palco, entre fumaça"
+                 width="1000" height="1250" fetchpriority="high">
+          </div>
+          <figcaption>
+            <p class="tag tag--musica">Música · Ensaio</p>
+            <h2><a href="materia.html">A cidade como instrumento: o que se ouve quando tudo para</a></h2>
+            <p class="meta"><span>18 out 2026</span><span>8 min de leitura</span></p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="section" aria-labelledby="destaques-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Curadoria da semana</p>
+            <h2 id="destaques-title">Para começar por aqui</h2>
+          </div>
+          <p>Três leituras que conversam entre si — do rosto pintado à sala de cinema que vira roda de conversa.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <a class="card-media" href="materia.html" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   alt="" loading="lazy" width="800" height="600">
+            </a>
+            <div class="card-body">
+              <p class="tag tag--arte">Arte visual · Perfil</p>
+              <h3><a href="materia.html">O rosto como pintura, a pintura como espelho</a></h3>
+              <p class="dek">Uma geração de artistas usa o autorretrato para falar de memória, família e pertencimento.</p>
+              <p class="meta"><span>15 out 2026</span><span>6 min</span></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card-media" href="materia.html" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   alt="" loading="lazy" width="800" height="600">
+            </a>
+            <div class="card-body">
+              <p class="tag tag--cinema">Cinema · Reportagem</p>
+              <h3><a href="materia.html">Salas de rua: quando o filme acaba e a conversa começa</a></h3>
+              <p class="dek">Os cinemas de bairro resistem menos pela bilheteria e mais pelo que acontece depois da sessão.</p>
+              <p class="meta"><span>12 out 2026</span><span>7 min</span></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card-media" href="materia.html" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   alt="" loading="lazy" width="800" height="600">
+            </a>
+            <div class="card-body">
+              <p class="tag tag--literatura">Literatura · Ensaio</p>
+              <h3><a href="materia.html">Bibliotecas de bairro: o último lugar sem pressa</a></h3>
+              <p class="dek">Entre salas de leitura e empréstimos de três semanas, um elogio ao tempo que não se compra.</p>
+              <p class="meta"><span>09 out 2026</span><span>5 min</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Últimas -->
+    <section class="section" id="ultimas" aria-labelledby="ultimas-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Acervo</p>
+            <h2 id="ultimas-title">Últimas matérias</h2>
+          </div>
+          <p>Filtre por linguagem ou busque pelo que interessa. Nada de rolagem infinita.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrar por linguagem">
+          <button class="chip" type="button" data-filter="tudo" aria-pressed="true">Tudo</button>
+          <button class="chip" type="button" data-filter="musica" aria-pressed="false">Música</button>
+          <button class="chip" type="button" data-filter="arte" aria-pressed="false">Arte visual</button>
+          <button class="chip" type="button" data-filter="cinema" aria-pressed="false">Cinema</button>
+          <button class="chip" type="button" data-filter="literatura" aria-pressed="false">Literatura</button>
+          <button class="chip" type="button" data-filter="moda" aria-pressed="false">Moda</button>
+          <button class="chip" type="button" data-filter="urbano" aria-pressed="false">Cultura urbana</button>
+        </div>
+
+        <p class="result-count" id="resultado" role="status">9 matérias</p>
+
+        <div class="grid" id="grade">
+          <article class="card" data-categoria="musica">
+            <a class="card-media" href="materia.html" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   alt="" loading="lazy" width="800" height="600">
+            </a>
+            <div class="card-body">
+              <p class="tag tag--musica">Música · Reportagem</p>
+              <h3><a href="materia.html">O sampler como memória: uma escuta da produção recente</a></h3>
+              <p class="dek">Quando um trecho de disco antigo vira base de uma canção nova, o passado ganha outra batida.</p>
+              <p class="meta"><span>18 out 2026</span><span>7 min</span></p>
+            </div>
+          </article>
+
+          <article class="card" data-categoria="musica">
+            <a class="card-media" href="materia.html" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   alt="" loading="lazy" width="800" height="600">
+            </a>
+            <div class="card-body">
+              <p class="tag tag--musica">Música · Ensaio</p>
+              <h3><a href="materia.html">Noite longa: o que os clubes ensinaram a uma geração</a></h3>
+              <p class="dek">A pista como escola de escuta, paciência e convivência. E o que sobra quando as luzes acendem.</p>
+              <p class="meta"><span>15 out 2026</span><span>9 min</span></p>
+            </div>
+          </article>
+
+          <article class="card" data-categoria="arte">
+            <a class="card-media" href="materia.html" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   alt="" loading="lazy" width="800" height="600">
+            </a>
+            <div class="card-body">
+              <p class="tag tag--arte">Arte visual · Reportagem</p>
+              <h3><a href="materia.html">A exposição como encontro: as galerias voltaram a ser ponto de conversa</a></h3>
+              <p class="dek">Abertura de mostra virou programa de fim de semana — e não é só pela arte na parede.</p>
+              <p class="meta"><span>12 out 2026</span><span>6 min</span></p>
+            </div>
+          </article>
+
+          <article class="card" data-categoria="arte">
+            <a class="card-media" href="materia.html" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   alt="" loading="lazy" width="800" height="600">
+            </a>
+            <div class="card-body">
+              <p class="tag tag--arte">Arte visual · Perfil</p>
+              <h3><a href="materia.html">Pintura que respira: o corpo como paisagem na nova geração</a></h3>
+              <p class="dek">Telas grandes, gesto solto e uma pergunta simples: o que um corpo carrega quando pinta?</p>
+              <p class="meta"><span>09 out 2026</span><span>8 min</span></p>
+            </div>
+          </article>
+
+          <article class="card" data-categoria="cinema">
+            <a class="card-media" href="materia.html" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   alt="" loading="lazy" width="800" height="600">
+            </a>
+            <div class="card-body">
+              <p class="tag tag--cinema">Cinema · Ensaio</p>
+              <h3><a href="materia.html">O cinema independente que ainda revela o Brasil por dentro</a></h3>
+              <p class="dek">Longe do eixo das grandes estreias, filmes pequenos encontram público em salas improváveis.</p>
+              <p class="meta"><span>06 out 2026</span><span>8 min</span></p>
+            </div>
+          </article>
+
+          <article class="card" data-categoria="literatura">
+            <a class="card-media" href="materia.html" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   alt="" loading="lazy" width="800" height="600">
+            </a>
+            <div class="card-body">
+              <p class="tag tag--literatura">Literatura · Lista</p>
+              <h3><a href="materia.html">O que a poesia brasileira está lendo agora</a></h3>
+              <p class="dek">Cinco livros que circulam entre poetas — e que explicam menos do que abrem.</p>
+              <p class="meta"><span>02 out 2026</span><span>6 min</span></p>
+            </div>
+          </article>
+
+          <article class="card" data-categoria="moda">
+            <a class="card-media" href="materia.html" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   alt="" loading="lazy" width="800" height="600">
+            </a>
+            <div class="card-body">
+              <p class="tag tag--moda">Moda · Ensaio</p>
+              <h3><a href="materia.html">Roupa como arquivo: a moda que se recusa a ser tendência</a></h3>
+              <p class="dek">Peças guardadas por décadas contam histórias que nenhum lançamento de estação consegue contar.</p>
+              <p class="meta"><span>28 set 2026</span><span>7 min</span></p>
+            </div>
+          </article>
+
+          <article class="card" data-categoria="moda">
+            <a class="card-media" href="materia.html" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   alt="" loading="lazy" width="800" height="600">
+            </a>
+            <div class="card-body">
+              <p class="tag tag--moda">Moda · Reportagem</p>
+              <h3><a href="materia.html">Elegância de segunda mão: o brechó ganha outro status</a></h3>
+              <p class="dek">Garimpar deixou de ser economia discreta e virou critério de estilo — com regras próprias.</p>
+              <p class="meta"><span>24 set 2026</span><span>5 min</span></p>
+            </div>
+          </article>
+
+          <article class="card" data-categoria="urbano">
+            <a class="card-media" href="materia.html" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1499415479124-43c32433a620?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   alt="" loading="lazy" width="800" height="600">
+            </a>
+            <div class="card-body">
+              <p class="tag tag--urbano">Cultura urbana · Crônica</p>
+              <h3><a href="materia.html">No music, no life: a cidade escrita em neon</a></h3>
+              <p class="dek">Letreiros antigos sobrevivem como memória afetiva de uma cidade que troca de pele rápido demais.</p>
+              <p class="meta"><span>20 set 2026</span><span>4 min</span></p>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty" id="vazio" hidden>Nada por aqui ainda. Tente outra palavra ou volte para “Tudo”.</p>
+      </div>
+    </section>
+
+    <!-- Linguagens -->
+    <section class="section" id="linguagens" aria-labelledby="linguagens-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Navegue por cor</p>
+            <h2 id="linguagens-title">Quatro linguagens, uma cidade</h2>
+          </div>
+          <p>Cada editoria tem sua frequência. Escolha uma e veja o que está tocando.</p>
+        </div>
+
+        <div class="tiles">
+          <a class="tile tile--musica" href="#ultimas" data-filter="musica">
+            <h3>Música</h3>
+            <svg class="tile-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M7 17 17 7M9 7h8v8"></path>
+            </svg>
+          </a>
+          <a class="tile tile--arte" href="#ultimas" data-filter="arte">
+            <h3>Arte visual</h3>
+            <svg class="tile-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M7 17 17 7M9 7h8v8"></path>
+            </svg>
+          </a>
+          <a class="tile tile--cinema" href="#ultimas" data-filter="cinema">
+            <h3>Cinema</h3>
+            <svg class="tile-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M7 17 17 7M9 7h8v8"></path>
+            </svg>
+          </a>
+          <a class="tile tile--urbano" href="#ultimas" data-filter="urbano">
+            <h3>Cultura urbana</h3>
+            <svg class="tile-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M7 17 17 7M9 7h8v8"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section" id="newsletter" aria-labelledby="newsletter-title">
+      <div class="wrap">
+        <div class="band">
+          <svg class="band-arcs" viewBox="0 0 400 400" fill="none" aria-hidden="true" focusable="false">
+            <g stroke="#F4EFE6" stroke-linecap="round">
+              <path d="M400 60A340 340 0 0 1 60 400" stroke-width="1.3" opacity=".5"></path>
+              <path d="M400 140A260 260 0 0 1 140 400" stroke-width="1.1" opacity=".4"></path>
+              <path d="M400 220A180 180 0 0 1 220 400" stroke-width="1" opacity=".3"></path>
+            </g>
+          </svg>
+
+          <div class="band-inner">
+            <span class="brand-word">ressonância</span>
+            <h2 id="newsletter-title">Uma edição por semana. Nada além disso.</h2>
+            <p class="lede">Uma matéria principal, até três destaques e uma playlist para atravessar a semana.</p>
+
+            <form class="news-form" id="news-form" novalidate>
+              <label class="sr-only" for="email">Seu e-mail</label>
+              <input type="email" id="email" name="email" placeholder="voce@email.com" autocomplete="email" aria-describedby="form-msg" required>
+              <button class="btn btn--on-band" type="submit">Assinar</button>
+            </form>
+            <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+            <p class="small">Sem spam. Cancele quando quiser.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a class="brand" href="index.html">
+            <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+              <circle class="dot" cx="11" cy="16" r="2"></circle>
+              <g stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+                <path d="M11 11.5a4.5 4.5 0 0 1 0 9"></path>
+                <path d="M11 8a8 8 0 0 1 0 16"></path>
+                <path d="M11 4.5a11.5 11.5 0 0 1 0 23"></path>
+              </g>
+            </svg>
+            <span class="brand-word">ressonância</span>
+          </a>
+          <p>Conectar pessoas a manifestações culturais que dialoguem com a sua sensibilidade. Curadoria atenta, texto que aprofunda sem afastar.</p>
+          <p><a href="mailto:ola@ressonancia.com.br">ola@ressonancia.com.br</a></p>
+        </div>
+
+        <div class="foot-col">
+          <p class="foot-title">Navegar</p>
+          <ul>
+            <li><a href="#ultimas">Últimas matérias</a></li>
+            <li><a href="#linguagens">Linguagens</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="materia.html">Ensaio em destaque</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-col">
+          <p class="foot-title">Linguagens</p>
+          <ul>
+            <li><a href="#ultimas">Música</a></li>
+            <li><a href="#ultimas">Arte visual</a></li>
+            <li><a href="#ultimas">Cinema</a></li>
+            <li><a href="#ultimas">Literatura</a></li>
+            <li><a href="#ultimas">Moda</a></li>
+            <li><a href="#ultimas">Cultura urbana</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-col">
+          <p class="foot-title">Expediente</p>
+          <ul>
+            <li>Fotos: Unsplash</li>
+            <li>Fraunces, Inter e JetBrains Mono</li>
+            <li>HTML, CSS e JS puros</li>
+            <li>Site de demonstração</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="legal">
+        <span>© <span data-year>2026</span> Ressonância · Cultura que ressoa</span>
+        <span>Feito para ler sem pressa</span>
+        <a href="#topo">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
