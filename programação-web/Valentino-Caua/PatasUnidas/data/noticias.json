@@ -1,0 +1,354 @@
+[
+  {
+    "id": 1,
+    "titulo": "Dupla inseparável: Nina e Simba encontram um novo lar",
+    "categoria": "Adoções",
+    "data": "2026-10-18",
+    "imagem": "../assets/images/news-adocao.jpg",
+    "resumo": "Depois de meses de espera, os dois gatos foram adotados juntos por uma família de São Paulo. A história emocionou a equipe e os voluntários.",
+    "autor": "Equipe Patas Unidas",
+    "tempoLeitura": "4 min de leitura",
+    "destaque": true,
+    "conteudo": [
+      {
+        "tipo": "paragrafo",
+        "texto": "Nina e Simba chegaram ao Patas Unidas em momentos diferentes, mas a amizade entre os dois nasceu rapidamente. Ela, conversadeira e independente; ele, tranquilo e afetuoso. Juntos, transformaram a rotina do abrigo em uma pequena celebração diária."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Uma adoção que já começou com história"
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "A família de Marina e Rafael visitou o abrigo em busca de um gato. Ao conhecer Nina, os dois se apaixonaram. Minutos depois, perceberam que ela não saía do lado de Simba. A equipe explicou que os dois eram muito ligados e que a adoção conjunta seria o melhor caminho."
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "“A gente veio pensando em um gato, mas voltou com dois. Não teria como separar uma dupla tão bonita”, contou Marina. A adoção foi concluída em 16 de outubro, após entrevista e visita à nova casa."
+      },
+      {
+        "tipo": "lista",
+        "itens": [
+          "Os dois gatos passaram por avaliação veterinária antes da adoção.",
+          "A família recebeu orientações sobre adaptação e convivência entre gatos.",
+          "O acompanhamento pós-adoção continua por 90 dias."
+        ]
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "Histórias como essa mostram por que a adoção responsável é um compromisso de longo prazo. Nina e Simba agora têm uma janela para observar o sol, uma família para chamar de sua e a companhia um do outro."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Resgate no Jardim Ângela mobiliza equipe e vizinhos",
+    "categoria": "Resgates",
+    "data": "2026-10-12",
+    "imagem": "../assets/images/news-resgate.jpg",
+    "resumo": "Dois cães foram encontrados em uma área de mata após denúncia de moradores. A operação terminou com os animais seguros e em avaliação veterinária.",
+    "autor": "Cauã Balzaneli",
+    "tempoLeitura": "5 min de leitura",
+    "destaque": true,
+    "conteudo": [
+      {
+        "tipo": "paragrafo",
+        "texto": "Na manhã de 11 de outubro, a equipe recebeu uma mensagem com fotos de dois cães de pequeno porte circulando próximos a uma área de mata no Jardim Ângela, zona sul de São Paulo. Os animais aparentavam estar assustados e com fome."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Ação em conjunto"
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "Com apoio de vizinhos, os voluntários montaram um ponto de alimentação e, com paciência, conseguiram atrair os cães para uma área segura. A captura foi feita sem violência e os dois foram encaminhados para a clínica parceira da organização."
+      },
+      {
+        "tipo": "lista",
+        "itens": [
+          "Os cães receberam hidratação e alimentação adequada.",
+          "Exames iniciais não indicaram ferimentos graves.",
+          "A dupla está em observação e passará por castração antes de ser disponibilizada para adoção."
+        ]
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "A ONG reforça a importância de denunciar situações de abandono e maus-tratos. Resgates são sempre planejados com orientação técnica e priorizam a segurança dos animais e das pessoas envolvidas."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "Campanha Outubro Laranja arrecada 1,2 tonelada de ração",
+    "categoria": "Campanhas",
+    "data": "2026-10-05",
+    "imagem": "../assets/images/news-campanha.jpg",
+    "resumo": "Com apoio de pet shops, escolas e famílias, a campanha superou a meta inicial em 40% e vai abastecer o abrigo por três meses.",
+    "autor": "Equipe Patas Unidas",
+    "tempoLeitura": "3 min de leitura",
+    "destaque": true,
+    "conteudo": [
+      {
+        "tipo": "paragrafo",
+        "texto": "A edição de 2026 da campanha Outubro Laranja terminou com um resultado que emocionou a equipe: 1,2 tonelada de ração arrecadada, além de 180 quilos de areia sanitária e 90 cobertores."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Uma rede de solidariedade"
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "Participaram da ação 14 pontos de coleta, entre pet shops, escolas e condomínios. Turmas do ensino fundamental organizaram cartazes e arrecadaram doações em seus bairros. A meta inicial era de 850 quilos."
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "Os alimentos serão distribuídos entre o abrigo próprio e sete famílias parceiras que acolhem animais em recuperação. A prestação de contas completa está disponível na página de transparência."
+      },
+      {
+        "tipo": "lista",
+        "itens": [
+          "1.200 kg de ração para cães e gatos.",
+          "180 kg de areia sanitária.",
+          "90 cobertores e 40 caixas de transporte.",
+          "Doações de medicamentos para uso veterinário."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "Feira de adoção da Praça da República reúne 300 visitantes",
+    "categoria": "Eventos",
+    "data": "2026-09-28",
+    "imagem": "../assets/images/news-evento.jpg",
+    "resumo": "O evento contou com 18 animais, orientação sobre posse responsável e sete adoções concluídas no mesmo dia.",
+    "autor": "Valentino Chagas Hoehne",
+    "tempoLeitura": "4 min de leitura",
+    "destaque": false,
+    "conteudo": [
+      {
+        "tipo": "paragrafo",
+        "texto": "A Praça da República recebeu, no último sábado, a feira de adoção do Patas Unidas. Ao longo de seis horas, cerca de 300 pessoas passaram pelo espaço, conversaram com a equipe e conheceram os animais disponíveis."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Adoção com acompanhamento"
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "A feira não funciona como uma entrega imediata. Todos os interessados passam por uma entrevista, preenchem o formulário e recebem uma visita de acompanhamento antes da adoção ser finalizada. Sete animais encontraram um novo lar, e outros cinco estão em processo de avaliação."
+      },
+      {
+        "tipo": "lista",
+        "itens": [
+          "18 animais disponíveis para adoção.",
+          "7 adoções concluídas no mesmo dia.",
+          "Distribuição de 120 guias sobre posse responsável.",
+          "Arrecadação de 60 kg de ração."
+        ]
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "A próxima feira está prevista para novembro. Acompanhe a agenda nas redes sociais e no site para não perder as novidades."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "Como preparar a casa para receber um gato",
+    "categoria": "Cuidados",
+    "data": "2026-09-20",
+    "imagem": "../assets/images/news-cuidados.jpg",
+    "resumo": "Telas de proteção, cantinho de descanso e uma rotina tranquila são alguns dos cuidados essenciais nos primeiros dias.",
+    "autor": "Equipe Patas Unidas",
+    "tempoLeitura": "6 min de leitura",
+    "destaque": false,
+    "conteudo": [
+      {
+        "tipo": "paragrafo",
+        "texto": "A chegada de um gato em casa exige planejamento. Diferentemente do que muitos imaginam, gatos também precisam de ambiente seguro, estímulos e rotina. Nos primeiros dias, paciência é a palavra-chave."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Antes da chegada"
+      },
+      {
+        "tipo": "lista",
+        "itens": [
+          "Instale telas de proteção em janelas e varandas.",
+          "Reserve um cômodo tranquilo com água, comida, areia e esconderijo.",
+          "Retire plantas tóxicas e objetos pequenos do alcance.",
+          "Tenha caixa de transporte, comedouro, bebedouro e arranhador."
+        ]
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Os primeiros dias"
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "Deixe o gato explorar no próprio ritmo. Evite visitas, barulho excessivo e colo forçado. Aproxime-se com calma, ofereça petiscos e respeite o esconderijo escolhido. A adaptação pode levar de alguns dias a algumas semanas."
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "Também é importante manter o acompanhamento veterinário em dia e seguir o calendário de vacinação e vermifugação indicado pelo profissional."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "titulo": "De abandonado a companheiro de terapia: a história do Fred",
+    "categoria": "Histórias",
+    "data": "2026-09-14",
+    "imagem": "../assets/images/animal-fred.jpg",
+    "resumo": "Resgatado em 2024, Fred se tornou um cão de apoio emocional e hoje visita instituições de longa permanência com sua nova família.",
+    "autor": "Cauã Balzaneli",
+    "tempoLeitura": "5 min de leitura",
+    "destaque": false,
+    "conteudo": [
+      {
+        "tipo": "paragrafo",
+        "texto": "Fred tem um jeito calmo e um olhar que parece entender tudo. Ele chegou ao Patas Unidas em 2024, depois de ser encontrado abandonado em um terreno na zona leste. Tinha medo de barulhos, mas nunca perdeu a vontade de ficar perto das pessoas."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Uma nova vocação"
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "Adotado por uma educadora social, Fred começou a acompanhar sua tutora em visitas a uma instituição de longa permanência. A presença dele trouxe sorrisos e conversas. Em pouco tempo, o cão foi reconhecido como apoio emocional."
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "A história de Fred é um lembrete de que animais resgatados também podem transformar a vida de outras pessoas. A adoção responsável abre espaço para novas histórias, todos os dias."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "titulo": "Mutirão de castração atende 84 animais em Guarulhos",
+    "categoria": "Campanhas",
+    "data": "2026-09-02",
+    "imagem": "../assets/images/sobre-acao.jpg",
+    "resumo": "A ação contou com três clínicas parceiras e priorizou animais de famílias em situação de vulnerabilidade social.",
+    "autor": "Equipe Patas Unidas",
+    "tempoLeitura": "3 min de leitura",
+    "destaque": false,
+    "conteudo": [
+      {
+        "tipo": "paragrafo",
+        "texto": "O mutirão de castração realizado em Guarulhos atendeu 84 animais, entre cães e gatos. A ação é parte do programa de controle populacional e bem-estar animal da organização."
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "Todas as cirurgias foram realizadas por equipes veterinárias parceiras, com acompanhamento pré e pós-operatório. Os tutores receberam orientações sobre repouso, higiene e retorno para retirada de pontos."
+      },
+      {
+        "tipo": "lista",
+        "itens": [
+          "84 animais castrados.",
+          "12 famílias encaminhadas para acompanhamento social.",
+          "Distribuição de 40 kits de cuidados pós-operatórios."
+        ]
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "A castração é uma das medidas mais eficazes para reduzir o abandono e o sofrimento animal. O próximo mutirão será divulgado na página de campanhas."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "titulo": "Voluntários celebram 850 adoções responsáveis",
+    "categoria": "Adoções",
+    "data": "2026-08-24",
+    "imagem": "../assets/images/news-evento.jpg",
+    "resumo": "A marca histórica foi alcançada com o acompanhamento de famílias adotantes, entrevistas e visitas pós-adoção.",
+    "autor": "Equipe Patas Unidas",
+    "tempoLeitura": "4 min de leitura",
+    "destaque": false,
+    "conteudo": [
+      {
+        "tipo": "paragrafo",
+        "texto": "O Patas Unidas comemorou, em agosto, a marca de 850 adoções responsáveis desde o início de suas atividades. O número representa 850 famílias, 850 encontros e muitas histórias de recomeço."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Mais do que um número"
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "Cada adoção passa por um processo de entrevista, avaliação da rotina da família e visita ao novo lar. A equipe acompanha a adaptação por 90 dias e oferece suporte em caso de dificuldades."
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "“O nosso trabalho não termina no dia da adoção. Ele começa de novo a cada família que decide assumir esse compromisso com responsabilidade”, explica a coordenadora de adoções."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "titulo": "Inverno solidário leva cobertores e cuidados ao abrigo",
+    "categoria": "Campanhas",
+    "data": "2026-08-10",
+    "imagem": "../assets/images/news-historia.jpg",
+    "resumo": "Com a queda das temperaturas, a campanha arrecadou cobertores, aquecedores e suplementos para os animais em recuperação.",
+    "autor": "Valentino Chagas Hoehne",
+    "tempoLeitura": "3 min de leitura",
+    "destaque": false,
+    "conteudo": [
+      {
+        "tipo": "paragrafo",
+        "texto": "O inverno de 2026 chegou com noites frias e exigiu cuidados extras no abrigo. A campanha Inverno Solidário mobilizou doadores e voluntários para garantir conforto aos animais em recuperação."
+      },
+      {
+        "tipo": "lista",
+        "itens": [
+          "120 cobertores novos e usados em bom estado.",
+          "6 aquecedores para os espaços de recuperação.",
+          "Suplementos alimentares e medicamentos prescritos.",
+          "Trocas de camas e manutenção do isolamento térmico."
+        ]
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "As doações materiais fazem diferença imediata. A lista de necessidades é atualizada periodicamente na página de doações, com prioridade para itens de maior urgência."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "titulo": "Cinco sinais de que você está pronto para adotar",
+    "categoria": "Cuidados",
+    "data": "2026-07-29",
+    "imagem": "../assets/images/news-cuidados.jpg",
+    "resumo": "Adotar é um compromisso para muitos anos. Antes de dar o primeiro passo, vale refletir sobre rotina, custos e expectativas.",
+    "autor": "Equipe Patas Unidas",
+    "tempoLeitura": "6 min de leitura",
+    "destaque": false,
+    "conteudo": [
+      {
+        "tipo": "paragrafo",
+        "texto": "A adoção responsável começa com uma decisão consciente. Antes de se encantar por um animal, é importante avaliar se a rotina da sua casa comporta as necessidades dele por toda a vida."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Reflexões importantes"
+      },
+      {
+        "tipo": "lista",
+        "itens": [
+          "Você tem tempo diário para cuidados, alimentação e companhia?",
+          "A casa ou apartamento está seguro e adaptado para o animal?",
+          "Todos que moram com você concordam com a adoção?",
+          "Você consegue arcar com alimentação, vacinas e imprevistos veterinários?",
+          "Está disposto a adaptar sua rotina e assumir o compromisso por 10 ou 15 anos?"
+        ]
+      },
+      {
+        "tipo": "paragrafo",
+        "texto": "Se as respostas forem positivas, o próximo passo é conhecer os animais, preencher o formulário e conversar com a equipe. Nosso papel é ajudar a construir uma adoção segura para todos."
+      }
+    ]
+  }
+]

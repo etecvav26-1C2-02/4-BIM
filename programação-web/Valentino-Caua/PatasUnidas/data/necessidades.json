@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "item": "Ração para cães adultos",
+    "categoria": "Alimentação",
+    "descricao": "Necessidade contínua para os 38 cães que vivem no abrigo e nos lares temporários.",
+    "meta": "150 kg",
+    "arrecadado": "62 kg",
+    "urgencia": "alta",
+    "status": "em-andamento"
+  },
+  {
+    "id": 2,
+    "item": "Ração para gatos filhotes",
+    "categoria": "Alimentação",
+    "descricao": "Alimento específico para os filhotes em fase de crescimento e adaptação.",
+    "meta": "40 kg",
+    "arrecadado": "31 kg",
+    "urgencia": "media",
+    "status": "em-andamento"
+  },
+  {
+    "id": 3,
+    "item": "Medicamentos e vermífugos",
+    "categoria": "Saúde",
+    "descricao": "Itens prescritos pela equipe veterinária para tratamentos em andamento.",
+    "meta": "30 caixas",
+    "arrecadado": "11 caixas",
+    "urgencia": "alta",
+    "status": "em-andamento"
+  },
+  {
+    "id": 4,
+    "item": "Cobertores e mantas",
+    "categoria": "Conforto",
+    "descricao": "Para as noites frias e para as camas dos animais em recuperação.",
+    "meta": "60 unidades",
+    "arrecadado": "48 unidades",
+    "urgencia": "media",
+    "status": "em-andamento"
+  },
+  {
+    "id": 5,
+    "item": "Areia sanitária",
+    "categoria": "Higiene",
+    "descricao": "Consumida diariamente nos espaços dos 21 gatos resgatados.",
+    "meta": "120 kg",
+    "arrecadado": "120 kg",
+    "urgencia": "baixa",
+    "status": "meta-atingida"
+  },
+  {
+    "id": 6,
+    "item": "Consultas e exames veterinários",
+    "categoria": "Saúde",
+    "descricao": "Apoio financeiro para consultas, exames de sangue e ultrassonografias.",
+    "meta": "20 atendimentos",
+    "arrecadado": "8 atendimentos",
+    "urgencia": "alta",
+    "status": "em-andamento"
+  },
+  {
+    "id": 7,
+    "item": "Vacinas polivalentes",
+    "categoria": "Saúde",
+    "descricao": "Imunização de novos resgates antes da disponibilização para adoção.",
+    "meta": "40 doses",
+    "arrecadado": "17 doses",
+    "urgencia": "alta",
+    "status": "em-andamento"
+  },
+  {
+    "id": 8,
+    "item": "Produtos de limpeza",
+    "categoria": "Higiene",
+    "descricao": "Desinfetante pet, sabão neutro, luvas e sacos de lixo para a rotina do abrigo.",
+    "meta": "Kit mensal",
+    "arrecadado": "Kit parcial",
+    "urgencia": "media",
+    "status": "em-andamento"
+  }
+]

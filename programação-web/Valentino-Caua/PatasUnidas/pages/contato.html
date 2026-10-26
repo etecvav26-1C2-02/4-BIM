@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato | Patas Unidas</title>
+  <meta name="description" content="Fale com a equipe do Patas Unidas sobre adoção, voluntariado, doações ou parcerias. Formulário de demonstração com envio simulado.">
+  <meta name="theme-color" content="#2f7d5b">
+  <meta name="author" content="Cauã Balzaneli e Valentino Chagas Hoehne">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Contato | Patas Unidas">
+  <meta property="og:description" content="Fale com a equipe do Patas Unidas sobre adoção, voluntariado, doações ou parcerias. Formulário de demonstração com envio simulado.">
+  <meta property="og:image" content="../assets/images/og-patas-unidas.jpg">
+  <meta property="og:image:alt" content="Patas Unidas: um novo começo cabe em um lar">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html" aria-label="Patas Unidas, página inicial">
+        <span class="brand__mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="4" cy="8" r="2"/><circle cx="7" cy="17" r="2"/><circle cx="15" cy="17" r="2"/><path d="M7 11.5c1.2-2.1 2.7-3.5 4.5-3.5s3.3 1.4 4.5 3.5"/></svg></span>
+        <span class="brand__text"><span class="brand__name">Patas <span>Unidas</span></span><small>Adoção responsável</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <svg class="icon nav-toggle__open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon nav-toggle__close" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <nav class="site-nav" id="menu-principal" aria-label="Menu principal">
+        <ul class="site-nav__list">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="animais.html">Animais</a></li>
+          <li><a href="adocao.html">Adoção</a></li>
+          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm nav-cta" href="animais.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg> Quero adotar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Você está aqui">
+        <ol><li><a href="../index.html">Início</a></li><li aria-current="page">Contato</li></ol>
+      </nav>
+      <div class="page-hero__content">
+        <p class="eyebrow">Vamos conversar</p>
+        <h1>Um canal aberto para adoções, dúvidas e apoio.</h1>
+        <p>Envie sua mensagem, tire dúvidas sobre o processo de adoção ou fale com a equipe sobre voluntariado e doações.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="contato-titulo">
+    <div class="container contact-layout">
+      <form class="form-card" id="form-contato" novalidate>
+        <div class="form-card__intro">
+          <h2 id="contato-titulo">Envie uma mensagem</h2>
+          <p>Esta é uma demonstração acadêmica. O envio é simulado e nenhuma informação é transmitida.</p>
+        </div>
+
+        <div class="form-status" aria-live="polite"></div>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="contato-nome">Nome completo</label>
+            <input type="text" id="contato-nome" name="nome" autocomplete="name" required data-error-required="Informe seu nome completo." aria-describedby="contato-nome-erro">
+            <p class="field__error" id="contato-nome-erro"></p>
+          </div>
+          <div class="field">
+            <label for="contato-email">E-mail</label>
+            <input type="email" id="contato-email" name="email" autocomplete="email" inputmode="email" required data-error-required="Informe seu e-mail." data-error-invalid="Informe um e-mail válido, como nome@exemplo.com." aria-describedby="contato-email-erro">
+            <p class="field__error" id="contato-email-erro"></p>
+          </div>
+          <div class="field">
+            <label for="contato-telefone">Telefone <span class="optional">(opcional)</span></label>
+            <input type="tel" id="contato-telefone" name="telefone" autocomplete="tel" inputmode="tel" placeholder="(11) 91234-5678" data-error-invalid="Informe um telefone com DDD, por exemplo (11) 91234-5678." aria-describedby="contato-telefone-erro contato-telefone-dica">
+            <p class="field__error" id="contato-telefone-erro"></p>
+            <p class="hint" id="contato-telefone-dica">Se preferir, informe um telefone para contato.</p>
+          </div>
+          <div class="field">
+            <label for="contato-assunto">Assunto</label>
+            <select id="contato-assunto" name="assunto" required data-error-required="Escolha um assunto." aria-describedby="contato-assunto-erro">
+              <option value="">Selecione uma opção</option>
+              <option value="adocao">Adoção</option>
+              <option value="voluntariado">Voluntariado</option>
+              <option value="doacoes">Doações</option>
+              <option value="imprensa">Imprensa e parcerias</option>
+              <option value="outro">Outro assunto</option>
+            </select>
+            <p class="field__error" id="contato-assunto-erro"></p>
+          </div>
+          <div class="field field--full">
+            <label for="contato-mensagem">Mensagem</label>
+            <textarea id="contato-mensagem" name="mensagem" rows="7" minlength="20" maxlength="800" required data-error-required="Escreva sua mensagem." data-error-invalid="Escreva pelo menos 20 caracteres para que possamos entender seu contato." aria-describedby="contato-mensagem-erro contador-mensagem"></textarea>
+            <p class="field__error" id="contato-mensagem-erro"></p>
+            <div class="char-counter" id="contador-mensagem" aria-live="polite">0 / 800 caracteres</div>
+          </div>
+        </div>
+
+        <div class="checkbox-field" style="margin-top: 1rem;">
+          <input type="checkbox" id="contato-privacidade" name="privacidade" required data-error-required="É necessário aceitar a política de privacidade para enviar a mensagem." aria-describedby="contato-privacidade-erro">
+          <label for="contato-privacidade">Li e aceito a <a href="politica-de-privacidade.html">política de privacidade</a> e o tratamento dos dados apenas para fins desta demonstração.</label>
+          <p class="field__error" id="contato-privacidade-erro"></p>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn--primary" type="submit">Enviar mensagem</button>
+          <a class="btn btn--ghost" href="adocao.html">Consultar página de adoção</a>
+        </div>
+        <p class="form-note">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+          <span>Formulário de demonstração: nenhum dado é enviado, armazenado ou compartilhado.</span>
+        </p>
+      </form>
+
+      <aside aria-label="Informações de contato e localização">
+        <div class="contact-info">
+          <div class="contact-card">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            </span>
+            <div>
+              <h2>Telefone e WhatsApp</h2>
+              <p><a href="tel:+551140028922">(11) 4002-8922</a><br><span class="muted" style="font-size: 0.8rem;">Número fictício para demonstração</span></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </span>
+            <div>
+              <h2>E-mail</h2>
+              <p><a href="mailto:contato@patasunidas.org.br">contato@patasunidas.org.br</a><br><span class="muted" style="font-size: 0.8rem;">Resposta em até dois dias úteis</span></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <div>
+              <h2>Horário de atendimento</h2>
+              <p>Segunda a sexta, das 9h às 18h.<br>Sábados, das 9h às 13h.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-panel" style="margin-top: 1rem;">
+          <span class="map-panel__pin" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          </span>
+          <h2>Onde estamos</h2>
+          <p><strong>Rua das Acácias, 128</strong><br>Vila Mariana, São Paulo/SP<br>CEP 04000-000</p>
+          <p class="muted" style="font-size: 0.78rem;">Endereço fictício. Visitas ao abrigo somente com agendamento.</p>
+          <a class="btn btn--outline btn--sm" href="https://www.openstreetmap.org/search?query=Vila%20Mariana%2C%20S%C3%A3o%20Paulo" target="_blank" rel="noopener noreferrer">Abrir mapa externo</a>
+        </div>
+
+        <div class="contact-card" style="margin-top: 1rem;">
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-4M8.6 13.5l6.8 4"/></svg>
+          </span>
+          <div>
+            <h2>Redes sociais</h2>
+            <p style="margin-bottom: 0.6rem;">Acompanhe campanhas e adoções nas redes fictícias do projeto.</p>
+            <div class="social-links">
+              <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Patas Unidas (link fictício)"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+              <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook do Patas Unidas (link fictício)"><svg class="icon" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v7h4v-7h3l1-4h-4V8Z"/></svg></a>
+              <a class="social-link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube do Patas Unidas (link fictício)"><svg class="icon" viewBox="0 0 24 24"><path d="M21 12s0-3.5-.4-5a2.5 2.5 0 0 0-1.8-1.8C17.3 4.8 12 4.8 12 4.8s-5.3 0-6.8.4A2.5 2.5 0 0 0 3.4 7C3 8.5 3 12 3 12s0 3.5.4 5a2.5 2.5 0 0 0 1.8 1.8c1.5.4 6.8.4 6.8.4s5.3 0 6.8-.4A2.5 2.5 0 0 0 20.6 17c.4-1.5.4-5 .4-5Z"/><path d="m10 15 5-3-5-3v6Z"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--tint" aria-labelledby="contato-rapido-titulo">
+    <div class="container">
+      <div class="section-heading section-heading--center">
+        <p class="eyebrow">Antes de escrever</p>
+        <h2 id="contato-rapido-titulo">Talvez sua resposta esteja aqui</h2>
+      </div>
+      <div class="value-grid">
+        <article class="value-card">
+          <h3>Quero adotar</h3>
+          <p>Conheça o passo a passo, os requisitos e o acompanhamento pós-adoção.</p>
+          <a class="link-arrow" href="adocao.html">Ver página de adoção</a>
+        </article>
+        <article class="value-card">
+          <h3>Quero ser voluntário</h3>
+          <p>Veja as áreas de atuação e envie sua inscrição pelo formulário.</p>
+          <a class="link-arrow" href="voluntariado.html">Ver voluntariado</a>
+        </article>
+        <article class="value-card">
+          <h3>Quero doar</h3>
+          <p>Confira os valores sugeridos, a chave Pix fictícia e as necessidades atuais.</p>
+          <a class="link-arrow" href="doacoes.html">Ver doações</a>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="../index.html" aria-label="Patas Unidas, página inicial">
+            <span class="brand__mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="4" cy="8" r="2"/><circle cx="7" cy="17" r="2"/><circle cx="15" cy="17" r="2"/><path d="M7 11.5c1.2-2.1 2.7-3.5 4.5-3.5s3.3 1.4 4.5 3.5"/></svg></span>
+            <span class="brand__text"><span class="brand__name">Patas <span>Unidas</span></span><small>Adoção responsável</small></span>
+          </a>
+          <p>Resgatamos cães e gatos, cuidamos deles e buscamos famílias. Site fictício criado para um trabalho acadêmico.</p>
+          <div class="social-links">
+            <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Patas Unidas (link fictício)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+            <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook do Patas Unidas (link fictício)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v7h4v-7h3l1-4h-4V8Z"/></svg></a>
+            <a class="social-link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube do Patas Unidas (link fictício)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12s0-3.5-.4-5a2.5 2.5 0 0 0-1.8-1.8C17.3 4.8 12 4.8 12 4.8s-5.3 0-6.8.4A2.5 2.5 0 0 0 3.4 7C3 8.5 3 12 3 12s0 3.5.4 5a2.5 2.5 0 0 0 1.8 1.8c1.5.4 6.8.4 6.8.4s5.3 0 6.8-.4A2.5 2.5 0 0 0 20.6 17c.4-1.5.4-5 .4-5Z"/><path d="m10 15 5-3-5-3v6Z"/></svg></a>
+          </div>
+        </div>
+
+        <nav aria-label="Navegação do rodapé">
+          <h2 class="footer__title">Navegação</h2>
+          <ul class="footer__links">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="animais.html">Animais</a></li>
+            <li><a href="adocao.html">Adoção</a></li>
+            <li><a href="voluntariado.html">Voluntariado</a></li>
+            <li><a href="doacoes.html">Doações</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Institucional">
+          <h2 class="footer__title">Institucional</h2>
+          <ul class="footer__links">
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="politica-de-privacidade.html">Política de privacidade</a></li>
+            <li><a href="termos-de-uso.html">Termos de uso</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer__title">Contato</h2>
+          <ul class="footer__contact">
+            <li><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><a href="tel:+551140028922">(11) 4002-8922</a></li>
+            <li><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:contato@patasunidas.org.br">contato@patasunidas.org.br</a></li>
+            <li><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Rua das Acácias, 128<br>Vila Mariana, São Paulo/SP</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-current-year>2026</span> Patas Unidas. Projeto acadêmico fictício.</p>
+        <p><strong>Autores: Cauã Balzaneli e Valentino Chagas Hoehne.</strong></p>
+        <div class="footer__legal">
+          <a href="politica-de-privacidade.html">Privacidade</a>
+          <a href="termos-de-uso.html">Termos</a>
+          <a href="contato.html">Contato</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="../assets/js/main.js"></script>
+  <script type="module" src="../assets/js/formularios.js"></script>
+</body>
+</html>

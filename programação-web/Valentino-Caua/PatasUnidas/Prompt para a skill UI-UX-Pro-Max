@@ -1,0 +1,648 @@
+# Prompt para a skill UI-UX-Pro-Max
+
+> Copie e cole o prompt abaixo na ferramenta de IA junto com a skill **ui-ux-pro-max**.
+
+---
+
+## Prompt
+
+Você é um especialista em **UI/UX, acessibilidade, arquitetura de informação e desenvolvimento front-end**. Utilize a skill **ui-ux-pro-max** para planejar e desenvolver um site completo chamado **“Patas Unidas”**, voltado à adoção responsável de animais.
+
+O projeto deve ser criado exclusivamente com:
+
+- **HTML5 semântico**
+- **CSS3 puro**
+- **JavaScript Vanilla puro**
+- Nenhum framework ou biblioteca externa de JavaScript
+- Nenhum React, Vue, Angular, Bootstrap, Tailwind, jQuery ou similar
+- Sem backend
+- Compatível com hospedagem estática
+- Código organizado e versionável com Git e GitHub
+
+**Importante:** o site deve ser desenvolvido como um projeto front-end completo, mas não utilize frameworks. A implementação deve ser responsiva, acessível, funcional e visualmente profissional.
+
+---
+
+## 1. Contexto do projeto
+
+O site se chama **Patas Unidas** e representa uma organização fictícia de proteção animal que atua no resgate, cuidado e encaminhamento de cães e gatos para adoção responsável.
+
+A proposta possui relevância social porque organizações de proteção animal normalmente contam com poucos recursos e dependem de uma presença digital eficiente para:
+
+- Divulgar animais disponíveis para adoção;
+- Orientar possíveis adotantes;
+- Captar voluntários;
+- Receber doações;
+- Divulgar notícias e campanhas;
+- Oferecer um canal de contato transparente;
+- Fortalecer a conscientização sobre a posse responsável.
+
+O público-alvo é composto por:
+
+- Pessoas interessadas em adotar um animal;
+- Famílias em busca de cães ou gatos;
+- Voluntários em potencial;
+- Doadores;
+- Apoiadores de organizações de proteção animal;
+- Pessoas interessadas em conhecer ações de resgate e bem-estar animal.
+
+O objetivo é criar uma experiência simples, acolhedora, confiável e acessível, capaz de incentivar a adoção responsável e facilitar o contato com a organização.
+
+---
+
+## 2. Identidade visual
+
+Crie uma identidade visual acolhedora, leve, moderna e emocionalmente positiva.
+
+### Paleta de cores
+
+Utilize predominantemente:
+
+- Verde principal: confiança, natureza e cuidado;
+- Verde escuro: textos, títulos e elementos de destaque;
+- Laranja: ações, botões, chamadas e pontos de atenção;
+- Creme ou bege claro: fundos suaves;
+- Branco: áreas de respiro e contraste;
+- Cinza escuro: textos secundários.
+
+Sugestão de variáveis CSS:
+
+```css
+:root {
+  --color-primary: #2f7d5b;
+  --color-primary-dark: #20543d;
+  --color-secondary: #f28c28;
+  --color-secondary-dark: #c96b13;
+  --color-background: #fffaf2;
+  --color-surface: #ffffff;
+  --color-text: #24332b;
+  --color-text-muted: #66736b;
+  --color-border: #dce6df;
+  --color-success: #3d9b63;
+  --color-danger: #c94b4b;
+}
+```
+
+### Tipografia
+
+Utilize uma fonte sem serifa, legível e moderna. Priorize uma pilha de fontes nativas, por exemplo:
+
+```css
+font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+```
+
+A hierarquia tipográfica deve ser clara, com:
+
+- Títulos fortes e acolhedores;
+- Textos curtos e fáceis de escanear;
+- Bom espaçamento entre linhas;
+- Tamanho mínimo confortável para leitura em celulares;
+- Contraste adequado entre texto e fundo.
+
+### Estilo visual
+
+Utilize:
+
+- Cards com cantos levemente arredondados;
+- Sombras suaves;
+- Imagens grandes e bem recortadas de cães e gatos;
+- Ícones simples e consistentes;
+- Botões com estados de hover, foco e ativo;
+- Ilustrações ou formas orgânicas discretas;
+- Espaços amplos entre as seções;
+- Elementos visuais que transmitam cuidado, segurança e esperança.
+
+Evite:
+
+- Excesso de cores;
+- Poluição visual;
+- Textos longos em blocos extensos;
+- Animações exageradas;
+- Contraste insuficiente;
+- Carrosséis automáticos difíceis de controlar;
+- Botões ambíguos ou sem descrição.
+
+---
+
+## 3. Requisitos gerais de UX
+
+A experiência deve ser mobile first e responsiva para:
+
+- Celulares;
+- Tablets;
+- Notebooks;
+- Monitores grandes.
+
+O layout deve utilizar:
+
+- Container centralizado;
+- Grid e Flexbox;
+- Breakpoints bem definidos;
+- Menu adaptável para telas pequenas;
+- Navegação por teclado;
+- Estados de carregamento;
+- Mensagens de erro e sucesso;
+- Formulários com validação;
+- Modais acessíveis;
+- Feedback visual após ações do usuário;
+- Links e botões com áreas de toque confortáveis.
+
+A navegação principal deve ser fixa ou permanecer visível durante a rolagem, sem prejudicar o conteúdo.
+
+Utilize HTML semântico com elementos como:
+
+- `header`;
+- `nav`;
+- `main`;
+- `section`;
+- `article`;
+- `aside`;
+- `footer`;
+- `form`;
+- `button`.
+
+---
+
+## 4. Acessibilidade
+
+Busque atender ao nível **AA das diretrizes WCAG 2.2**.
+
+Implemente obrigatoriamente:
+
+- Texto alternativo significativo em todas as imagens;
+- Contraste adequado entre texto e fundo;
+- Navegação completa pelo teclado;
+- Indicador de foco sempre visível;
+- Uso correto de headings, de `h1` a `h6`;
+- Labels associados aos campos de formulário;
+- Mensagens de erro compreensíveis;
+- Atributos ARIA apenas quando necessários;
+- Suporte a `prefers-reduced-motion`;
+- Botões com nomes acessíveis;
+- Links descritivos;
+- Estrutura compatível com leitores de tela;
+- Fechamento de modais pela tecla `Esc`;
+- Foco direcionado corretamente ao abrir e fechar modais;
+- Não depender apenas de cor para transmitir informações;
+- Conteúdo legível em telas pequenas.
+
+Inclua um botão de **“Pular para o conteúdo principal”** no início da página.
+
+---
+
+## 5. Estrutura do site
+
+Crie dez páginas interligadas por um menu de navegação comum e por um rodapé compartilhado.
+
+Utilize a seguinte estrutura:
+
+### 1. Página inicial — `index.html`
+
+Objetivo: apresentar a organização e conduzir o visitante para as principais ações.
+
+Seções:
+
+- Header com logotipo “Patas Unidas”;
+- Menu de navegação;
+- Hero com chamada para adoção;
+- Botões “Encontrar um animal” e “Quero ajudar”;
+- Destaques de animais disponíveis;
+- Números da organização, como animais resgatados e adoções realizadas;
+- Seção “Como funciona a adoção”;
+- Campanha ou chamada para doações;
+- Depoimentos de adotantes;
+- Notícias recentes;
+- Rodapé com contatos e redes sociais.
+
+### 2. Página de animais — `animais.html`
+
+Objetivo: exibir todos os animais disponíveis para adoção.
+
+Recursos em JavaScript:
+
+- Carregamento dos dados a partir de `animais.json`;
+- Filtro por espécie;
+- Filtro por porte;
+- Filtro por idade;
+- Filtro por sexo;
+- Filtro por cidade ou região;
+- Campo de busca por nome;
+- Ordenação dos resultados;
+- Cards dinâmicos;
+- Mensagem quando nenhum animal for encontrado;
+- Botão para limpar filtros;
+- Estado de carregamento.
+
+Cada card deve conter:
+
+- Foto;
+- Nome;
+- Espécie;
+- Idade;
+- Porte;
+- Sexo;
+- Temperamento resumido;
+- Status;
+- Botão “Ver detalhes”.
+
+### 3. Página de detalhes do animal — `animal.html`
+
+Objetivo: mostrar informações completas de um animal específico.
+
+Recursos:
+
+- Identificação do animal por parâmetro na URL;
+- Galeria ou imagem principal;
+- Nome, espécie, idade e porte;
+- História do resgate;
+- Personalidade;
+- Necessidades especiais, quando aplicável;
+- Informações sobre vacinação e castração;
+- Compatibilidade com crianças e outros animais;
+- Botão “Tenho interesse em adotar”;
+- Botão de compartilhamento;
+- Animais semelhantes.
+
+### 4. Página sobre a organização — `sobre.html`
+
+Objetivo: apresentar a história, a missão e os valores do Patas Unidas.
+
+Seções:
+
+- História da organização;
+- Missão;
+- Visão;
+- Valores;
+- Equipe ou voluntários;
+- Indicadores de impacto;
+- Fotos das ações;
+- Compromisso com o bem-estar animal;
+- Autores do projeto.
+
+Inclua uma seção visível com o texto:
+
+> **Projeto desenvolvido por Cauã Balzaneli e Valentino Chagas Hoehne.**
+
+Esses nomes também devem aparecer no rodapé comum do site como autores do projeto.
+
+### 5. Página de adoção responsável — `adocao.html`
+
+Objetivo: explicar o processo de adoção de maneira clara.
+
+Apresente o processo em etapas:
+
+1. Conheça os animais;
+2. Preencha o formulário;
+3. Converse com a equipe;
+4. Participe da entrevista;
+5. Prepare a casa;
+6. Finalize a adoção;
+7. Acompanhe a adaptação.
+
+Inclua:
+
+- Requisitos para adoção;
+- Responsabilidades do adotante;
+- Checklist de preparação;
+- Perguntas frequentes;
+- Avisos sobre adoção consciente;
+- Chamada para visualizar os animais.
+
+### 6. Página de voluntariado — `voluntariado.html`
+
+Objetivo: captar voluntários.
+
+Inclua:
+
+- Explicação sobre as formas de voluntariado;
+- Atividades presenciais e remotas;
+- Requisitos básicos;
+- Formulário de inscrição;
+- Campo para nome;
+- E-mail;
+- Telefone;
+- Cidade;
+- Área de interesse;
+- Disponibilidade;
+- Mensagem;
+- Checkbox de aceite da política de privacidade.
+
+Recursos JavaScript:
+
+- Validação dos campos;
+- Mensagens de erro acessíveis;
+- Máscara simples para telefone;
+- Mensagem de sucesso após envio simulado;
+- Limpeza do formulário.
+
+### 7. Página de doações — `doacoes.html`
+
+Objetivo: incentivar contribuições financeiras e materiais.
+
+Inclua:
+
+- Explicação sobre como as doações ajudam;
+- Cards com valores sugeridos;
+- Opção de contribuição única ou recorrente;
+- Doação de ração, medicamentos e materiais;
+- Lista de necessidades atuais;
+- Informações fictícias de Pix;
+- Botão para copiar a chave Pix;
+- Mensagem de confirmação após copiar;
+- Transparência sobre a utilização dos recursos.
+
+Crie os dados das necessidades em `necessidades.json`.
+
+### 8. Página de notícias e histórias — `noticias.html`
+
+Objetivo: divulgar novidades, resgates, adoções e campanhas.
+
+Recursos:
+
+- Carregamento de notícias a partir de `noticias.json`;
+- Cards com imagem, categoria, data e título;
+- Filtro por categoria;
+- Busca por palavra-chave;
+- Ordenação por data;
+- Paginação simples ou botão “Carregar mais”;
+- Estado vazio quando não houver resultados.
+
+### 9. Página individual de notícia — `noticia.html`
+
+Objetivo: exibir uma notícia completa.
+
+Recursos:
+
+- Identificação da notícia por parâmetro na URL;
+- Título;
+- Data;
+- Categoria;
+- Imagem principal;
+- Conteúdo da notícia;
+- Botões de compartilhamento;
+- Notícias relacionadas;
+- Botão para voltar às notícias.
+
+### 10. Página de contato — `contato.html`
+
+Objetivo: oferecer um canal de comunicação com a organização.
+
+Inclua:
+
+- Formulário de contato;
+- Nome;
+- E-mail;
+- Telefone opcional;
+- Assunto;
+- Mensagem;
+- Checkbox de aceite;
+- Informações de contato;
+- Horário de atendimento;
+- Endereço fictício;
+- Links para redes sociais;
+- Área para mapa ou indicação textual de localização.
+
+Recursos JavaScript:
+
+- Validação completa;
+- Contagem de caracteres da mensagem;
+- Mensagens de erro;
+- Mensagem de sucesso;
+- Prevenção de envio inválido;
+- Simulação de envio sem backend.
+
+---
+
+## 6. Dados em JSON
+
+Crie arquivos JSON separados para manter os dados organizados:
+
+### `data/animais.json`
+
+Inclua pelo menos oito animais fictícios, com campos como:
+
+```json
+{
+  "id": 1,
+  "nome": "Luna",
+  "especie": "cachorro",
+  "idade": "2 anos",
+  "idadeCategoria": "adulto",
+  "porte": "medio",
+  "sexo": "femea",
+  "cidade": "São Paulo",
+  "imagem": "assets/images/luna.jpg",
+  "descricao": "Carinhosa, brincalhona e muito companheira.",
+  "historia": "Luna foi resgatada em situação de abandono...",
+  "temperamento": ["carinhosa", "brincalhona"],
+  "castrado": true,
+  "vacinado": true,
+  "status": "disponivel"
+}
+```
+
+### `data/noticias.json`
+
+Inclua notícias fictícias sobre:
+
+- Adoções realizadas;
+- Resgates;
+- Campanhas;
+- Eventos;
+- Cuidados com animais;
+- Histórias de transformação.
+
+### `data/necessidades.json`
+
+Inclua itens como:
+
+- Ração;
+- Medicamentos;
+- Cobertores;
+- Produtos de higiene;
+- Consultas veterinárias;
+- Vacinas.
+
+---
+
+## 7. Componentes reutilizáveis
+
+Mesmo utilizando apenas HTML, CSS e JavaScript, organize o código para evitar repetição.
+
+Crie componentes ou estruturas reutilizáveis para:
+
+- Header;
+- Menu mobile;
+- Rodapé;
+- Cards de animais;
+- Cards de notícias;
+- Botões;
+- Badges de status;
+- Modais;
+- Alertas;
+- Formulários;
+- Mensagens de estado vazio;
+- Indicadores de carregamento.
+
+O JavaScript deve possuir funções organizadas e nomes claros. Separe as responsabilidades em arquivos quando possível, por exemplo:
+
+```text
+/assets/css/style.css
+/assets/js/main.js
+/assets/js/animais.js
+/assets/js/noticias.js
+/assets/js/formularios.js
+/data/animais.json
+/data/noticias.json
+/data/necessidades.json
+```
+
+---
+
+## 8. Interações obrigatórias
+
+Implemente em JavaScript Vanilla:
+
+- Abertura e fechamento do menu mobile;
+- Filtros de animais;
+- Busca textual;
+- Ordenação;
+- Carregamento de dados JSON;
+- Renderização dinâmica dos cards;
+- Modal de detalhes ou confirmação;
+- Validação de formulários;
+- Feedback de envio;
+- Botão de copiar Pix;
+- Contador de caracteres;
+- Compartilhamento usando Web Share API com fallback;
+- Botão de voltar ao topo;
+- Navegação suave;
+- Estados de loading, sucesso e erro;
+- Mensagem amigável quando não houver dados.
+
+Nenhum formulário deve realmente enviar dados para um servidor. Simule o envio no front-end e informe claramente que se trata de uma demonstração.
+
+---
+
+## 9. Header e rodapé
+
+O header deve conter:
+
+- Logotipo textual ou símbolo de pata;
+- Nome “Patas Unidas”;
+- Menu principal;
+- Botão de destaque “Adote agora”;
+- Menu mobile acessível;
+- Indicação visual da página atual.
+
+O rodapé deve conter:
+
+- Nome e breve descrição da organização;
+- Links de navegação;
+- Links para adoção, voluntariado e doações;
+- Informações de contato;
+- Redes sociais fictícias;
+- Política de privacidade;
+- Termos de uso;
+- Aviso de que o projeto é fictício ou acadêmico, se necessário;
+- Texto obrigatório:
+
+> **Autores: Cauã Balzaneli e Valentino Chagas Hoehne.**
+
+---
+
+## 10. Responsividade
+
+Use abordagem mobile first.
+
+Em telas pequenas:
+
+- Transforme o menu em menu hambúrguer;
+- Organize cards em uma coluna;
+- Reduza o tamanho dos títulos sem comprometer a leitura;
+- Mantenha botões largos e fáceis de tocar;
+- Evite tabelas horizontais;
+- Reorganize formulários em uma coluna;
+- Preserve espaçamentos confortáveis.
+
+Em telas médias e grandes:
+
+- Use grids de duas a quatro colunas;
+- Amplie a área do hero;
+- Organize formulários em múltiplas colunas quando adequado;
+- Utilize seções com duas colunas para texto e imagem;
+- Mantenha o conteúdo centralizado e com largura máxima confortável.
+
+---
+
+## 11. SEO básico
+
+Inclua em todas as páginas:
+
+- `title` específico;
+- Meta description;
+- `lang="pt-BR"`;
+- URLs e links internos coerentes;
+- Headings hierárquicos;
+- Texto alternativo nas imagens;
+- Dados estruturados básicos quando apropriado;
+- Favicon;
+- Open Graph básico;
+- Descrição clara dos conteúdos.
+
+---
+
+## 12. Qualidade técnica
+
+O código final deve:
+
+- Ser bem identado;
+- Ter comentários apenas quando úteis;
+- Evitar código duplicado;
+- Não apresentar erros no console;
+- Utilizar nomes de classes consistentes;
+- Utilizar `const` e `let` corretamente;
+- Evitar variáveis globais desnecessárias;
+- Tratar erros de carregamento dos arquivos JSON;
+- Funcionar sem backend em hospedagem estática;
+- Ser compatível com navegadores modernos;
+- Possuir foco visível;
+- Ser validável por ferramentas de acessibilidade e qualidade.
+
+Inclua uma documentação `README.md` contendo:
+
+- Descrição do projeto;
+- Objetivos;
+- Tecnologias utilizadas;
+- Estrutura de pastas;
+- Como executar localmente;
+- Como adicionar novos animais;
+- Como adicionar novas notícias;
+- Observações sobre os formulários simulados;
+- Autores: Cauã Balzaneli e Valentino Chagas Hoehne.
+
+---
+
+## 13. Direção visual final
+
+O resultado deve transmitir:
+
+- Acolhimento;
+- Confiança;
+- Cuidado;
+- Transparência;
+- Esperança;
+- Responsabilidade;
+- Incentivo à ação.
+
+Priorize uma experiência emocional, mas sem perder clareza, profissionalismo e usabilidade.
+
+A página inicial deve deixar evidente, nos primeiros segundos, as três principais ações:
+
+1. Adotar um animal;
+2. Ser voluntário;
+3. Fazer uma doação.
+
+Não crie apenas uma página visualmente bonita. Desenvolva uma experiência completa, coerente e funcional, com foco em conversão, acessibilidade, responsividade e facilidade de manutenção.
+
+**Entregue o projeto utilizando somente HTML5, CSS3 e JavaScript Vanilla puro.**
