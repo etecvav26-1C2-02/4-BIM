@@ -2,7 +2,8 @@ import json
 import os
 import random
 
-DATA_FILE = "biblioteca_dados.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_FILE = os.path.join(BASE_DIR, "biblioteca_dados.json")
 
 books = []
 
