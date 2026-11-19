@@ -102,7 +102,7 @@ def show_book(book):
     print(f"Autor: {book['author']}")
     print(f"Ano: {book['year']} | Gênero: {book['genre']}")
     print(f"Páginas: {book['progress']}/{book['pages']} {progress_bar(book)}")
-    print(f"Status: {book['status']}" + (" ⭐ Favorito" if book["favorite"] else ""))
+    print(f"Status: {book['status']}" + (" Favorito" if book["favorite"] else ""))
 
     if book["rating"] is not None:
         print(f"Nota: {book['rating']}/5")
@@ -282,28 +282,31 @@ def main():
         show_menu()
         option = input("Escolha uma opção: ")
 
-        if option == "1":
-            register_book()
-        elif option == "2":
-            list_books()
-        elif option == "3":
-            rate_book()
-        elif option == "4":
-            update_progress()
-        elif option == "5":
-            random_pick()
-        elif option == "6":
-            statistics()
-        elif option == "7":
-            search_books()
-        elif option == "8":
-            filter_by_genre()
-        elif option == "9":
-            save_data()
-            print("Sistema encerrado.")
-            break
-        else:
-            print("Opção inválida.")
+        
+
+        match option:
+            case "1":
+                register_book()
+            case "2":
+                list_books()
+            case "3":
+                rate_book()
+            case "4":
+                update_progress()
+            case "5":
+                random_pick()
+            case "6":
+                statistics()
+            case "7":
+                search_books()
+            case "8":
+                filter_by_genre()
+            case "9":
+                save_data()
+                print("Sistema encerrado.")
+                break
+            case _:
+                print("Opção inválida")
 
 
 main()
